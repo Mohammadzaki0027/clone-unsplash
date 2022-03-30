@@ -14,7 +14,7 @@
 <div id="div1"><img src="https://img.icons8.com/material-two-tone/2x/unsplash--v2.png" alt=""></div>
 <div id="div2">
     <div ><i class="fa-solid fa-magnifying-glass"></i></div>
-    <input  type="text " id="out" placeholder="Search free high-resolution photo">
+    <input  type="text " id="out" onchange="openpage()" placeholder="Search free high-resolution photo">
 
 </div >
 <div class="div3">
@@ -97,7 +97,7 @@
         <div class="down">
             <div class="iclass"><i class="fa-solid fa-plus"></i></div>
             <div class="wish"><i class="fa-regular fa-heart"></i></div>
-            <img src="https://images.unsplash.com/photo-1648561302819-672ef1c7f98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=400&q=60" alt=""></div>
+            <img src="https://images.unsplash.com/photo-1648620845049-f8732a8dc0a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60" alt=""></div>
     <div class="down">
         <div class="iclass"><i class="fa-solid fa-plus"></i></div>
         <div class="wish"><i class="fa-regular fa-heart"></i></div>
@@ -276,7 +276,7 @@
 
    loginpage.forEach(iclass => {
   iclass.addEventListener('click', function handleClick(event) {
-   alert("First Login and Sign Up")
+  window.open("/login.html")
 
    
   });
@@ -286,14 +286,22 @@ var wishlist= document.querySelectorAll(".wish")
 
 wishlist.forEach(wish => {
 wish.addEventListener('click', function Click(event) {
-alert("First Login and Sign Up")
+    window.open("/login.html")
 
 
 });
 });
-
-
-
+function openpage(){
+    var x=document.querySelector("#out").value
+if(x=="nature")
+{
+window.open("nature.html")
+}
+if(x==="blog")
+{
+    window.open("/blog.html")
+}
+}
 
 
 </script>
