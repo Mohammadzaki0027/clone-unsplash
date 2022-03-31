@@ -17,5 +17,6 @@ function signUpFunction(){
     userInformation.push(userObj)
 
     localStorage.setItem("signupData",JSON.stringify(userInformation))
+    window.location="../html/loginPage.html"
 
 }
