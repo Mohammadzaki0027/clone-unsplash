@@ -13,29 +13,38 @@ body{
     background: white;
 }
 
-.main{
+.main-Page{
     display: flex;
     justify-content: right;
-
+   
 }
 
 
-.main .image{
-    width: 40%;
+ .image{
+    width: 55%;
     /* overflow-y: hidden; */
-    position: fixed;
+    /* position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
     
    
 }
 
 .left-image{
 position: relative;
-    text-align: center;
-    color: white;
+    /* color: rgb(87, 21, 21); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   width: 40%;
+}
+
+.left-main-image{
+    width: 100%;
 }
 
 .image .top-left-logo{
@@ -81,10 +90,13 @@ position: relative;
     text-align: center;
     font-size: 50px;
     /* text-transform: uppercase; */
-    color: black;
+    color:#111111;
     /* letter-spacing: 5px; */
-    font-weight: 700;
     margin-top: 50px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 46px;
+    line-height: 55px;
 
 }
 
@@ -119,6 +131,7 @@ position: relative;
     margin-top: 90px;
     margin-left: 80px;
     margin-right: 80px;
+    
 
 }
 
@@ -163,7 +176,7 @@ position: relative;
 }
 
 .input_wrap_last{
-width: 47%;
+width: 56%;
 /* color: red; */
 margin-left: 80px;
 margin-right: 80px;
