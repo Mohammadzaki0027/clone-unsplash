@@ -1,0 +1,161 @@
+
+
+*{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Hubballi', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: white;
+    overflow: hidden;
+
+}
+
+.wrapper{
+    /* height: 1000px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.registration_form{
+    /* height: 800px; */
+    width: 600px;
+    /* background: rgb(184, 55, 55); */
+    padding: 25px;
+    border-radius: 5px;
+   
+}
+
+.registration_form .login{
+    text-align: center;
+    font-size: 28px;
+    /* text-transform: uppercase; */
+    color: black;
+    /* letter-spacing: 5px; */
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+
+.registration_form .imagelogo img{
+    width: 100%;
+    height: 64px;  
+}
+
+
+
+.registration_form .paragraph{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: 400px;
+
+}
+
+
+.registration_form #FacebookBtn input{
+    /* width: 100%; */
+    color: white;
+    background-color:#1778f2;;
+    padding: 15px;
+    border: 0px;
+    border-radius: 5px;
+    /* letter-spacing: 3px; */
+    cursor: pointer;
+    outline: none;
+    /* margin-top: 40px; */
+   
+}
+
+.registration_form #FacebookBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1778f2;
+    margin-top: 30px;
+
+}
+
+#FacebookBtn .imageoffacebook{
+    width: 30px;
+    height: 30px;
+}
+
+
+.registration_form .or{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form_wrap{
+    margin-top: 40px;
+}
+
+.form_wrap .input_wrap{
+    margin-bottom: 20px;
+   
+
+}
+
+.form_wrap .input_wrap:last-child{
+    margin-bottom: 0px;
+}
+
+.form_wrap .input_wrap label{
+    display: block;
+    margin-bottom: 3px;
+    color:black;   
+    
+}
+
+#email-input{
+    margin-top: 15px;
+}
+
+#Password-input{
+    margin-top: 15px;
+}
+
+.password1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_wrap  input[type="text"]{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 10px;
+    outline: none;
+}
+
+.form_wrap .submit_btn{
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 15px;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 15px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 3px; */
+    cursor: pointer;
+    outline: none;
+   
+}
+
+form .paragraph1{
+    text-align: center;
+    margin-top: 40px;
+}
+
+
