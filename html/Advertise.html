@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        head{
+            margin: auto;
+        }
+        .a{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .a>button{
+        height: 35px;
+        background-color: black;
+        color: white;
+        margin-right: -120px;
+        width: 110px;
+        border-radius: 10px;
+    }
+    .a>img{
+        height: 50px;
+    }
+    h1,p{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    img{
+        width: 90%;
+        margin: auto;
+        margin-left: 88px;
+    }
+    ul>li{
+        font-size: 20px;
+        margin: 10px;
+        margin-left: 300px;
+    }
+    .bottom{
+            display: grid;
+            grid-template-rows: repeat(3,300px);
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            background-color: black;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            padding-left: 200px;
+            padding-right: 200px;
+
+            
+            
+        }
+        .bottom>div{
+            border: 1px solid white;
+            border-radius: 20px;
+            color: white;
+            text-align: center;   
+        }
+        #a{
+            grid-area: 1/1/2/4;
+            border:none;
+            padding-left: 350px;
+           
+        }
+        #a>h2{
+            font-size: 40px;
+            width: 75%;
+            
+        }
+        #a>h5{
+            text-align: center;
+            width: 80%;
+            text-align: left;
+            margin-bottom: -30px;
+        }
+        .bottom h1{
+            text-align: left;
+            padding-left: 15px;
+            
+        }
+        .bottom p{
+            padding-left: 20px;
+            text-align: left;
+            padding-right: 20px;
+            padding-top: 70px;
+        }
+        .block{
+            font-size: 20px;
+        }
+        a{
+            font-size: 20px;
+        }
+        @media all and (min-width: 421px) and (max-width: 720px)
+        {
+            .bottom{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(4,400px);
+                flex-wrap: wrap;
+                /* flex-direction: row-reverse; */
+            }
+        }
+        @media all and (min-width: 80px) and (max-width: 420px)
+        {
+            .bottom{
+                grid-template-columns: repeat(1,1fr);
+                grid-template-rows: repeat(6,400px);
+                flex-wrap: wrap;
+                /* flex-direction: row-reverse; */
+            }
+        }
+    
+    </style>
+</head>
+<body>
+<div class="a" style="justify-content: space-between;">
+    <a href="https://unsplash.com/"><img style="width: 50%; margin-left: 40px;" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCABAAEADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcGCAP/xAAwEAABAwIDBAcJAAAAAAAAAAABAAIEAwUGERIHExeUITNBVXOx0RQ1UlNhdKGz0//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCuIiICIpFL2uTI0qZGFjoOEeRWoBxlvGrdvLM8t39EFdRSKJtcmSZUOMbHQaJEijQLhLedO8eGZ5bv6quoCIiAiLPYkxZZ8LCA65MlvE01xR9lpsqZbnQXatb2/EMkGhXM1zsGJn3K6PZZbu5rp0tzXNgSiHA1XEEEMVX4tYM+Rd+Wof2W8j1mSaEeRTDgyvSp1mBwycG1Gh4zA7elBzZbLBiZlytb32W7ta2dEc5zoEoBoFVpJJLF0yvGRWZGoSJFQOLKFKpWeGjNxbTaXnIHt6Fg+LWDPkXflqH9kFCRZ7DeLLPikT3W1ktghGgK3tVNlPPfay3Toe74TmtCgKS7Zeqwr4l08oyrSku2XqsK+JdPKMgkC6stXuu0fYQ/0tXKa9RXkgACtVAHQMnu9UHU91913f7CZ+ly5TXqa8kgg1qpB6Dm93qvJBX9jXVYq8S1+UlVpSXY11WKvEtflJVaQFlsWYQi4sbbG15taKIBklu5psfr34pg56j2afytSiCW8HLV31N5ej6pwctXfU3l6PqqkiCW8HLV31N5ej6pwctXfU3l6PqqkiDLYTwhFwm25toTa0oTzGLt9TYzRuBUAy0nt1fhalEQf//Z" alt=""></a>
+    
+    <button >Get in touch</button>
+</div>
+<h1 style="font-size: 55px; font-weight: bold;">Advertise on Unsplash</h1>
+<p>The world’s most popular creative platforms are engaging with Unsplash’s creators.</p>
+<img src="https://unsplash.com/blog/content/images/2021/11/banner-2.jpg" alt="">
+<h1>➡️Direct advertising</h1>
+<p>When creators need an image, they come to Unsplash. When creators think about what to do with that image, <b>we help them think about your brand.</b> We create maximum impact by focusing on timing and exposure of the following paid placements:</p>
+<ul>
+    <li>Homepage</li>
+    <li>Downloads</li>
+    <li>In-Feed Placements
+    </li>
+</ul>
+<img src="https://unsplash.com/blog/content/images/2021/11/Direct-Ads.jpg" alt="">
+<h1>Homepage</h1>
+<p>Unsplash is a top 300 ranked website and our homepage is viewed over 50 million times every month. Taking over the homepage increases your brand’s relevance with the entirety of Unsplash’s audience.</p>
+<img src="https://unsplash.com/blog/content/images/size/w1600/2021/11/Ad-2--minimal-.jpg" alt="">
+<p style="color: #767676; font-size: 16px;">This sits at the moment of creation and associates your brand with the positive emotion of finding the perfect photo — reaching creators at the most optimal moment.</p>
+<h1>Downloads</h1>
+<p>With every photo download, we display your brand in a popup “Say thanks” message. This sits at the moment of creation and associates your brand with the positive emotion of finding the perfect photo — reaching creators at the most optimal moment.</p>
+<img src="https://unsplash.com/blog/content/images/size/w1600/2021/11/Ad-1--minimal-.jpg" alt="">
+<p style="color: #767676; font-size: 16px;">This sits at the moment of creation and associates your brand with the positive emotion of finding the perfect photo — reaching creators at the most optimal moment.</p>
+<h1>In-Feed Placements</h1>
+<p>Unsplash is the most popular image platform in the world, offering world-class curated imagery free for any use.</p>
+<img src="https://unsplash.com/blog/content/images/size/w1600/2021/11/Ad-3B--minimal-.jpg" alt="">
+<p>This sits at the moment of creation and associates your brand with the positive emotion of finding the perfect photo — reaching creators at the most optimal moment.</p>
+<p>Brands we’re proud to call partners</p>
+<img src="https://unsplash.com/blog/content/images/size/w1600/2021/11/direct-logos.jpg" alt="">
+<p>Over 100 of the world’s most popular platforms engaging with Unsplash</p>
+<h1>➡️ Native advertising</h1>
+<p>Advertising shouldn’t push against what people want, it should <i>align with</i> what they want.</p>
+<img src="https://unsplash.com/blog/content/images/2021/11/native.jpg" alt="">
+<h1>Product placement for the internet.</h1>
+<p>That’s why we here at Unsplash have built our business on a new model that’s based on true value exchange — sharing your Brand’s beautiful content and in exchange, the creators of the internet share your content with their audiences in relevant, trusted places.
+</p>
+<img src="https://unsplash.com/blog/content/images/2021/11/h.jpg" alt="">
+<p>Square used Unsplash to distribute their creative brand assets across the internet</p>
+<h1>Solutions to help your brand grow</h1>
+<img src="https://unsplash.com/blog/content/images/2021/11/partners.png" alt="">
+<p>Over 15,340 applications are powered by the Unsplash API. Your branded photos are featured in search results for Medium, Trello, Squarespace, Google, Square, BuzzFeed, and more...</p>
+<h1>Performance of Unsplash for Brands</h1>
+<img src="https://unsplash.com/blog/content/images/2021/11/Chart-1-1.png" alt="">
+<h1>Efficient media.</h1>
+<p>On Unsplash, you get at least double the impressions you pay for. In many cases, 3-5x more.
+</p>
+<img src="https://unsplash.com/blog/content/images/size/w1600/2021/11/Chart-4-5.png" alt="">
+<h1>Advertising for those who know there’s a better way.
+</h1>
+<img src="https://unsplash.com/blog/content/images/2021/11/brands.png" alt="">
+<img src="https://unsplash.com/blog/content/images/2021/11/Frame-284.png" alt="">
+<div class="bottom" style="margin-top: 50px;">
+    <div id="a"><h2>➡️ The Unsplash Audience</h2>
+    <h5 style="font-size: 21px;">We’ve been working with a selection of companies to do just that. Our first partners include Google, Harley-Davidson, Square, Boxed Water, Le Creuset, and Timberland.</h5>
+<br><h5 style="font-size: 21px;">We picked each brand because they were trying to accomplish something incredibly difficult: shifting mainstream perception.</h5>        </div>
+    <div ><h1 style="margin-bottom: -30px;" >All Creative Professionals 🎨</h1>
+    <p style="padding-bottom: -150px; font-size: 15px;">Unsplash attracts all creative professionals, ranging from Fortune 500 industry leaders to the growing demographic of professionals empowered by the democratization of creativity</p>
+    </div>
+    <div class="block"><h1>Targeting Capability 🎯</h1>
+    <p>Geo-targeting ads, by safelisting or blocklisting desired countries</p>
+    </div>
+    <div class="block"><h1 style="margin-bottom: -35px;">Up to 2.00%
+        clickthrough rate</h1>
+    <p>10x higher than Pinterest
+        3x higher than Dribbble</p></div>
+    <div class="block"><h1>75%</h1>
+    <p>of visitors are
+        between the ages
+        of 18–34</p></div>
+    <div class="block"><h1>71%</h1>
+    <p>of visitors have
+        a university degree</p></div>
+    <div class="block"><h1>51%</h1>
+    <p>of our users have a household income of more than $100k/year</p></div>
+    
+    
+</div>
+
+
+
+
+
+
+<h1 style="text-align: left;">Interested?</h1>
+<p style="text-align: left;">Contact partnerships@unsplash.com for more info.</p>
+<br>
+<p style="text-align: left;margin-top: -30px;">We’ll be sharing more of our point of view on advertising and updates on Unsplash for Brands. If you’d like to get these updates or learn more about advertising on Unsplash, you can subscribe below:
+    </p>
+   <input style="text-align: left; font-size: 20px; margin-left: 150px;margin-bottom: 30px;" type="email" placeholder="Email address"> 
+   <input style="font-size: 20px;" type="submit" value="Get info">
+   <hr style="width: 85%; margin-bottom: 30px;">
+   <div style="display: flex; justify-content: space-between; width: 85%;">
+       <div style="display: flex; width: 15%;">   <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCABAAEADASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAcGCAP/xAAwEAABAwIDBAcJAAAAAAAAAAABAAIEAwUGERIHExeUITNBVXOx0RQ1UlNhdKGz0//EABQBAQAAAAAAAAAAAAAAAAAAAAD/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCuIiICIpFL2uTI0qZGFjoOEeRWoBxlvGrdvLM8t39EFdRSKJtcmSZUOMbHQaJEijQLhLedO8eGZ5bv6quoCIiAiLPYkxZZ8LCA65MlvE01xR9lpsqZbnQXatb2/EMkGhXM1zsGJn3K6PZZbu5rp0tzXNgSiHA1XEEEMVX4tYM+Rd+Wof2W8j1mSaEeRTDgyvSp1mBwycG1Gh4zA7elBzZbLBiZlytb32W7ta2dEc5zoEoBoFVpJJLF0yvGRWZGoSJFQOLKFKpWeGjNxbTaXnIHt6Fg+LWDPkXflqH9kFCRZ7DeLLPikT3W1ktghGgK3tVNlPPfay3Toe74TmtCgKS7Zeqwr4l08oyrSku2XqsK+JdPKMgkC6stXuu0fYQ/0tXKa9RXkgACtVAHQMnu9UHU91913f7CZ+ly5TXqa8kgg1qpB6Dm93qvJBX9jXVYq8S1+UlVpSXY11WKvEtflJVaQFlsWYQi4sbbG15taKIBklu5psfr34pg56j2afytSiCW8HLV31N5ej6pwctXfU3l6PqqkiCW8HLV31N5ej6pwctXfU3l6PqqkiDLYTwhFwm25toTa0oTzGLt9TYzRuBUAy0nt1fhalEQf//Z" alt=""> 
+        
+        <p style="width: 300px;">Make something awesome</p>
+       </div>
+       <div style="justify-content: space-between; margin-right: -120px; margin-top: 30px;"><a style="text-decoration: none;" href="https://unsplash.com/about">About   . </a>
+        <a style="text-decoration: none;" href="https://unsplash.com/press">Press  . </a>
+        <a style="text-decoration: none;" href="https://unsplash.com/hiring">Join the team</a>    </div>
+   </div>
+</body>
+</html>
