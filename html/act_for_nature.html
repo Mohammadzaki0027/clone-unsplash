@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/8f1232e941.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        *{
+            font-family: -apple-system,BlinkMacSystemFont,San Francisco,Helvetica Neue,Helvetica,Ubuntu,Roboto,Noto,Segoe UI,Arial,sans-serif;
+        }
+       #toprow{
+        /* border : 1px solid black; */
+        height : 100px;
+        display : flex;
+        gap : 30px;
+        padding: 15px 10px 0px 15px;
+        
+        
+     }
+
+     #icon{
+         height : 65%;
+         width: 2.5%;
+         margin-left: 1%;
+     }
+
+     #div2{
+      display: flex;
+      width: 60%;
+      height: 80px;
+      border:  1px solid #EEEEEE ;
+     border-radius: 40px;
+     background-color: #EEEEEE;
+  }
+  
+  
+  #div2 >div> i{
+    /* border: 1px solid red; */
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color:  grey;
+    
+   
+}
+#out{
+    width: 80%;
+    outline: none;
+    border: none;
+    margin-left: 15px;
+    background-color: #EEEEEE;
+    font-size: 29px;
+}
+
+
+     #vertical {
+        height: 70px;
+           border: 1px solid rgb(222, 218, 218);
+           color: grey;
+        }
+   
+
+     #Explore{
+         /* border: 1px solid red; */
+         font-size: 29px;
+         color: grey;
+         margin: auto;
+         margin-left: 30px;
+         height: 70%;
+         width: 18%;
+         display: flex;
+         /* align-items:center; */
+         gap : 50px;
+      }
+
+      #Explore>div:hover{
+        color: black;
+        cursor: pointer;
+      }
+
+      #login{
+          /* border : 1px solid red; */
+          height: 80%;
+          width: 22%;
+          margin: auto;
+          display: flex;
+          align-items:center;
+          gap: 11%;
+      }
+
+      #login>div{
+        /* border: 1px solid black; */
+        height: 75%;
+        width: auto;
+        font-size: 29px;
+        color: grey;
+        align-items:center;
+
+      }
+
+      #login> div:hover{
+          color: black;
+          cursor: pointer;
+      }
+
+      #login > div> i:hover{
+        color: black;
+          cursor: pointer;
+      }
+
+      #login > div> button:hover{
+        color: black;
+          cursor: pointer;
+          border: 1px solid black;
+      }
+
+  
+      #login> div> button{
+          border: 1px solid #c2c0c0;
+          background-color: white;
+          color: grey;
+          border-radius: 8px;
+          width: 100%;
+          font-size: 28px;
+          padding: 14px ;
+      }
+
+      #login>div >i{
+        /* border: 1px solid red; */
+        font-size: 45px;
+        width: 60px;
+        color: grey;
+       
+      }
+
+      #menu{
+       height: 100%;
+       width: 50%;
+       color: red;
+      }
+
+
+      #secdiv{
+        /* border : 1px solid black; */
+        height : 83px;
+        display : flex;
+        padding: 15px 0px 15px 0px;
+        gap: 50px;
+        margin-left: 40px;
+      }
+
+      #secdiv > div{
+           /* border: 1px solid red;  */
+          font-size: 29px;
+          color: grey;
+          padding: 30px 0px 15px 0px;
+    
+     }
+
+     #secdiv>div:hover{
+          color: black;
+          cursor: pointer;
+      }
+     
+
+      .vertical_1 {
+           height: 40px;
+           border: 1px solid rgb(222, 218, 218);
+           color: grey;
+          
+        }
+
+      #actbox{
+          /* border :1px solid red; */
+          width:99%;
+          height: 800px;
+          margin: auto;
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          grid-template-rows: repeat(1,1fr);
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+
+    }
+
+    #actbox>div{
+        /* border: 1px solid black; */
+    }
+
+    h1{
+        font-size: 85px;
+        line-height: 50px;
+        margin-top: 140px;
+    }
+
+    #actbox>div>div>p{
+        font-size: 35px;
+        text-align: left;
+        line-height: 60px;
+    }
+
+   
+
+    #actbox2{
+        /* border: 1px solid black; */
+    }
+
+    #statusbox{
+        border: 1px solid #cfcfcf;
+        border-radius: 10px;
+        height: 50%;
+        width: 61%;  
+        margin-left: 34%;
+        margin-top: 110px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 10px;
+        padding: 45px 30px 30px 30px;
+    }
+
+    #statusbox>div{
+        /* border: 1px solid red; */
+        font-size: 29px;
+        height: 25%;
+        /* text-align:center; */
+        padding: 10px;
+    }
+
+    #staicon{
+        /* border: 1px solid black; */
+        display: flex;
+        gap:30px
+    }
+    
+    hr{
+      height: 1px;
+      width: 500px;
+  }
+
+  #staicon>div> i{
+    color: rgb(196, 194, 194);
+    width: 25px;
+   
+  }
+
+
+
+    #staicon > div{
+        /* border: 1px solid black; */
+        height: 30px;
+    }
+
+    #second{
+        /* border: 1px solid  black; */
+    }
+
+    #second >div{
+         border-radius: 7px;
+         width: 200px;
+         text-align: center;
+         margin: auto;
+         padding: 2%;
+         margin-left: 130px;
+         background-color: rgb(134, 203, 29);
+    }
+
+    #statusbox> div> img{
+        border-radius: 50%;
+        width: 90px;
+        height: 100px;
+        margin: auto;
+        margin-left: 270px;
+    }
+
+    #number>div{
+        font-weight: bolder;
+        margin-left: 270px;
+    }
+
+    #tc1{
+         /* border: 1px solid red;  */
+        width:200px;
+        height: auto;
+        display: flex;
+        gap: 15px;
+        margin: auto;
+        margin-left: 100px;
+    }
+
+    #tc1>div{
+        /* border: 1px solid black; */
+    }
+    
+    #tc1 >div >img{
+        /* border: 1px solid black; */
+        height: 30px;
+        width: 30px;
+        border-radius: 50%; 
+    }
+   #actbox2> button{
+        margin: auto;
+        margin-top: 40px;
+        margin-left: 34%;
+        background-color: black;
+        border-radius: 10px;
+        width: 66%;
+        font-size: 29px;
+        color: white;
+        padding: 20px;
+  }
+
+ 
+  #clock{
+       /* width:92%; */
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content:flex-end;
+      margin: auto;
+      margin-right: 100px;
+  }
+
+  #clock>div{
+    /* border: 1px solid black; */
+    font-size: 24px;
+    color: grey;
+    
+  }
+
+  #clock>div>i{
+      font-size: 20px;
+      padding: 25px;
+      color: grey;
+  }
+
+  #down >img{
+      height: auto;
+      width: 100%;
+      display: block;
+      padding-top: 40px;
+      background-color: white;
+      box-sizing: border-box;
+  }
+
+  #down >img:hover{
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+  }
+
+  #container{
+    margin-top: 130px;
+    column-count: 3;
+    column-gap: 20px;
+    gap: 40px;
+    padding: 15px;
+  }
+
+
+
+  #like{
+      font-size: 60px;
+
+  }
+
+  #add{
+      font-size: 60px;
+  }
+  #download{
+    font-size: 60px;
+  }
+ 
+  #here{
+      color: grey;
+
+  }
+  #here:hover{
+      color: black;
+  }
+
+#down{
+    position: relative;
+
+}
+#iclass
+{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid white;
+    right:7%;
+    top: 10%;
+    border-radius: 10px;
+    background-color: azure;
+}
+#iclass i{
+    color:#767676 ;
+    font-size: 35px;
+   padding-left: 20px;
+   padding-top: 15px ;
+
+}
+
+#iclass i:hover{
+    color: black;
+    cursor: pointer;
+}
+#wish{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid white;
+    right: 18%;
+    top: 10%;
+    border-radius: 10px;
+    background-color: azure;
+
+}
+
+#wish i{
+   
+    color:#767676 ;
+    font-size: 35px;
+   padding-left: 20px;
+   padding-top: 15px ;
+}
+
+#wish i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+#arrow{
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    border: 1px solid white;
+    right: 7%;
+    top: 80%;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+#arrow i{
+    color:#767676 ;
+    font-size: 35px;
+   padding-left: 20px;
+   padding-top: 15px ;
+}
+
+#arrow i:hover{
+    color: black;
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+
+ <!-- topRow -->
+
+   <div id="toprow">
+     <img  src="https://cdn-icons-png.flaticon.com/128/5968/5968749.png"  id="icon">
+     
+
+        <div id="div2">
+            <div ><i class="fa-solid fa-magnifying-glass"></i></div>
+            <input  type="text " id="out" onchange="openpage()" placeholder="Search free high-resolution photo">
+        </div>
+
+     <div id="Explore">
+         <div>Explore</div>
+         <div>Advertise</div>
+         <div>Blog</div>
+     </div>
+
+     <div id="vertical"></div>
+
+     <div id="login">
+         <div>Login</div>
+         <div><button>Submit a photo</button></div>
+         <div><i class="fa-solid fa-bars"></i></div>
+     </div>
+    
+   </div>
+
+ <!-- editorial line --> 
+    <div id="secdiv">
+        <div>Editorial</div>
+        <div class="vertical_1"></div>
+        <div>Act For Nature</div>
+        <div> Color For water</div>
+        <div>Current Events</div>
+        <div>Wallpapers</div>
+        <div>3D Renders</div>
+        <div>Textures & Patterns</div>
+        <div>Experimental</div>
+        <div>Architecture</div>
+        <div>Nature</div>
+        <div>Business & Work</div>
+    </div>
+       
+ <!-- act for nature box -->
+    <div id="actbox">
+       <div>
+           <h1>Act For Nature</h1>
+           <div >
+             <p>This year marks UNEP’s 50th birthday, and they’ve asked the Unsplash community to take part in celebrating this milestone and the planet.</p>
+             <p>  Submit powerful nature shots showcasing the landscapes you still want to be around 50 years from now. The top 15 submissions that best reflect the beauty of our planet to be featured in an online gallery on the UNEP website.</p>  
+             <p> Learn more <a href="https://unsplash.com/blog/unsplash-unep/" id="here">here</a>.</p>
+           </div>
+       </div> 
+
+
+        <div id="actbox2"> 
+
+<!-- status box   -->
+
+        <div id="statusbox">
+             
+            <div id="staicon">
+                <div><i class="fa-solid fa-bolt"></i></div>
+                   <div>Status</div>
+            </div>
+            <div id="second" >
+                <div>Open</div>
+            </div>
+
+<!-- <hr > -->
+
+            <div id="staicon">
+                    <div><i class="fa-solid fa-circle-user"></i></div>
+                    <div>Curator</div>
+            </div>
+            <div>
+                      <img id="UN" src="https://images.unsplash.com/profile-1643303684669-d002462b5ed5image?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff>"> 
+            </div>
+            
+               
+ <!-- <hr > -->
+
+            <div id="staicon">
+                   <div><i class="fa-solid fa-image"></i></div>
+                   <div>Contributions</div>
+            </div>
+            <div id="number">
+            <div>829</div> </div>
+            
+<!-- <hr > -->
+
+            <div id="staicon">
+                    <div><i class="fa-solid fa-user-group"></i></div>
+                    <div>Top contributors</div>
+            </div>
+          
+               <div id="tc">
+                   <div id="tc1">
+                   <div><img src="https://images.unsplash.com/profile-1546523766425-be843c9161e7?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"></div>
+                   <div><img src="https://images.unsplash.com/profile-1634653553021-5ee00c501272image?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"></div>
+                   <div><img src="https://images.unsplash.com/profile-1604758536753-68fd6f23aaf7image?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"></div>
+                   <div><img src="https://images.unsplash.com/profile-1641356925987-40e732340cc4?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"></div>
+                   <div><img src="https://images.unsplash.com/profile-1557995124272-d62d831ec026?dpr=2&auto=format&fit=crop&w=150&h=150&q=60&crop=faces&bg=fff"></div>
+                </div>
+                </div>
+           </div> 
+
+
+  <!-- button submit act for nature -->
+           <button onclick="myFUnction()">Submit to Act For Nature</button> 
+           <div id="clock">
+               <div> <i class="fa-regular fa-clock"></i> </div>
+               <div> <p id="time">Open to contributions until April 4, 2022 at 5:29 AM.</p></div>
+               
+           </div>
+        
+     </div> 
+
+    
+    </div> 
+   
+<!-- main div pic -->
+    <div id="container">
+     <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1602779415174-c8b9784f1a5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1628435442433-efda8649bd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60">  
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+        
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648586552883-2275422c32d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648606995243-345c9f0d3303?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1637732176720-54b7caece7ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648407647589-a329836e0e0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648334675359-58690edad0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648564626497-fbc3f8b2b827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1636027572844-0ef78ee54c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1635107090359-a3c5bc03e0a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1647752477456-03d1aed1cea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1627895497892-025681b2dce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1626454504237-90af4469063d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1626454504237-90af4469063d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1626106182308-f7ba2487d932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fHduenBMeHMwb>lFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1626106182308-f7ba2487d932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fHduenBMeHMwb>lFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1627857498841-7a62822a49e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1627857496990-ab734bff4b8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1607442478647-30ffd646d824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1607158111377-26fb77692c59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1633163590674-1291c3a6467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1602578383194-afc288bfb272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1607498889669-c2fb1e299cb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1603531085227-eda98781a9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648612094498-268bd77c2181?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI3fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1634542881441-28bf0c4b818b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1613033075264-1a7cd93d7f75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1624906482096-efdb2f650533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1648584420172-98ce91d079f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMxfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1540907678736-6f86a8f48541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        <img src="https://images.unsplash.com/photo-1541162362294-55e014481e82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDMzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"> 
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <!-- <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div>
+
+    <div id="down">
+        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
+        <div id="wish"><i class="fa-solid fa-heart"></i></div>
+        
+        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
+    </div> -->
+
+</div>
+    
+</body>
+</html>
+
+
+
+
+
+<script>
+
+// submit act for nature
+    function myFUnction(){
+        window.location.href="loginPage.html"
+    }
+
+// like funtcion
+    document.querySelector("#wish").addEventListener("click",like)
+    function like(){
+    window.location.href="loginPage.html"
+
+    } 
+// add function
+    document.querySelector("#iclass").addEventListener("click",add)
+    function add(){
+        window.location.href="loginPage.html"
+    }
+
+// download function
+    document.querySelector("#arrow").addEventListener("click",download)
+    function download(){
+        window.location.href="loginPage.html"
+    }
+    
+// image data arr
+    // var arr=[
+
+    //     {image :"https://images.unsplash.com/photo-1602779415174-c8b9784f1a5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1628435442433-efda8649bd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1648586552883-2275422c32d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1637732176720-54b7caece7ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1648614454260-875f1390bfe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1648606995243-345c9f0d3303?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1648564626497-fbc3f8b2b827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1648407647589-a329836e0e0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1648334675359-58690edad0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1647752477456-03d1aed1cea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1636027572844-0ef78ee54c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1635107090359-a3c5bc03e0a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1626454504237-90af4469063d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1626806416274-d943ad8f7482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1627895497892-025681b2dce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1627857496990-ab734bff4b8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1627857498841-7a62822a49e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1626106182308-f7ba2487d932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1633163590674-1291c3a6467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1607158111377-26fb77692c59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1607442478647-30ffd646d824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1603531085227-eda98781a9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1607498889669-c2fb1e299cb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1602578383194-afc288bfb272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+
+    //     {image :"https://images.unsplash.com/photo-1613033075264-1a7cd93d7f75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1648603200279-944a55251a5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
+    //     {image :"https://images.unsplash.com/photo-1634542881441-28bf0c4b818b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"}
+    // ]
+
+
+    // image mapping
+// document.querySelector("#img").value
+
+// arr.map(function(e){
+
+//     var box = document.createElement("div")
+//     box.setAttribute("id","box")
+
+
+//     var image = document.createElement("img");
+//     image.src  = e.image;
+//     image.setAttribute("id","smallimg")
+
+//     var btn = document.createElement("button");
+  
+//     box.append(image)
+//     document.querySelector("#img").append(box);
+// });
+
+</script>
