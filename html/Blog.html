@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>unsplash.com//sanjay</title>
+    <script src="https://kit.fontawesome.com/eae6d81590.js" crossorigin="anonymous"></script>
 
 
 
@@ -32,7 +33,33 @@
             color: #767676;
         }
         
-        
+        @media screen and (min-width:420px) and (max-width:720px) {
+            #container {
+                height: 50px;
+                width: 19%;
+                /* border: 1px solid black; */
+            }
+            #size {
+                width: 80px;
+                margin-left: -10px;
+                margin-top: 20px;
+            }
+            #second {
+                display: flex;
+                margin-top: -50px;
+                justify-content: space-evenly;
+                font-size: 15px;
+                padding: 20px 600px;
+                margin-top: -70px;
+                color: #767676;
+            }
+            #grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(1, 100px);
+                gap: 30px;
+            }
+        }
         
         #third {
             margin-left: 93%;
@@ -196,7 +223,7 @@
             <div><a href="comunity.html"> Community </a></div>
         </div>
         <div id="third">
-            <div>unsplash.com </div>
+            <div>unsplash.com <i class="fa-thin fa-arrow-up"></i></div>
         </div>
     </div>
 
