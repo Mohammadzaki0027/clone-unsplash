@@ -25,7 +25,6 @@ function signinFunction(){
     {
         alert("login sucessfull")
         window.location="../index.html"
-        // window.location="./nature.html"
     }
     else
     {
