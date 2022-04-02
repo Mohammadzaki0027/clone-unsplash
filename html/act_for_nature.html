@@ -275,8 +275,8 @@
 
     #statusbox> div> img{
         border-radius: 50%;
-        width: 90px;
-        height: 100px;
+        width: 50px;
+        height: px;
         margin: auto;
         margin-left: 270px;
     }
@@ -459,6 +459,13 @@
     cursor: pointer;
 }
 
+#feature {
+    font-size: 20px;
+    line-height: -30px;
+    margin-top: -25px
+}
+
+
     </style>
 </head>
 <body>
@@ -475,15 +482,15 @@
         </div>
 
      <div id="Explore">
-         <div>Explore</div>
-         <div>Advertise</div>
-         <div>Blog</div>
+         <div id="exp">Explore</div>
+         <div id="adver">Advertise</div>
+         <div id="blog">Blog</div>
      </div>
 
      <div id="vertical"></div>
 
      <div id="login">
-         <div>Login</div>
+         <div id="logIn">Login</div>
          <div><button>Submit a photo</button></div>
          <div><i class="fa-solid fa-bars"></i></div>
      </div>
@@ -492,10 +499,16 @@
 
  <!-- editorial line --> 
     <div id="secdiv">
-        <div>Editorial</div>
+        <div id="ed">Editorial</div>
         <div class="vertical_1"></div>
-        <div>Act For Nature</div>
-        <div> Color For water</div>
+        <div>
+            <div id="feature">Featured</div>
+            <div >Act For Nature</div>
+        </div>
+        <div>
+            <div id="feature">Featured</div>
+            <div>Color For water</div>
+        </div>
         <div>Current Events</div>
         <div>Wallpapers</div>
         <div>3D Renders</div>
@@ -503,7 +516,8 @@
         <div>Experimental</div>
         <div>Architecture</div>
         <div>Nature</div>
-        <div>Business & Work</div>
+        <div>Business &</div>
+        <div><i class="fa-solid fa-greater-than"></i></div>
     </div>
        
  <!-- act for nature box -->
@@ -804,26 +818,10 @@
         <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
     </div>
 
-    <!-- <div id="down">
-        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
-        <div id="wish"><i class="fa-solid fa-heart"></i></div>
-        
-        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
-    </div>
-
-    <div id="down">
-        <div id="iclass"><i class="fa-solid fa-plus"></i></div>
-        <div id="wish"><i class="fa-solid fa-heart"></i></div>
-        
-        <div id="arrow"><i class="fa-solid fa-arrow-down"></i></div>
-    </div> -->
-
 </div>
     
 </body>
 </html>
-
-
 
 
 
@@ -834,82 +832,48 @@
         window.location.href="loginPage.html"
     }
 
+// explore bar
+    document.querySelector("#exp").addEventListener("click",exp)
+    function exp(){
+    window.location.href=""
+    }
+
+    document.querySelector("#adver").addEventListener("click",adver)
+    function adver(){
+    window.location.href="Advertise.html"
+    }
+
+    document.querySelector("#blog").addEventListener("click",blog)
+    function blog(){
+    window.location.href="Blog.html"
+    } 
+
+    document.querySelector("#ed").addEventListener("click",ed)
+    function ed(){
+    window.location.href="../index.html"
+    } 
+
+    document.querySelector("#logIn").addEventListener("click",logIn)
+    function logIn(){
+    window.location.href="loginPage.html"
+    }
 // like funtcion
-    document.querySelector("#wish").addEventListener("click",like)
+    document.querySelectorAll("#wish").addEventListener("click",like)
     function like(){
     window.location.href="loginPage.html"
 
     } 
 // add function
-    document.querySelector("#iclass").addEventListener("click",add)
+    document.querySelectorAll("#iclass").addEventListener("click",add)
     function add(){
         window.location.href="loginPage.html"
     }
 
 // download function
-    document.querySelector("#arrow").addEventListener("click",download)
+    document.querySelectorAll("#arrow").addEventListener("click",download)
     function download(){
         window.location.href="loginPage.html"
     }
     
-// image data arr
-    // var arr=[
-
-    //     {image :"https://images.unsplash.com/photo-1602779415174-c8b9784f1a5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1628435442433-efda8649bd35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1648586552883-2275422c32d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDN8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1637732176720-54b7caece7ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDR8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1648614454260-875f1390bfe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1648606995243-345c9f0d3303?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=1100&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1648564626497-fbc3f8b2b827?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDd8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1648407647589-a329836e0e0e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDh8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1648334675359-58690edad0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDl8d256cEx4czBuUVl8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1647752477456-03d1aed1cea2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1636027572844-0ef78ee54c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1635107090359-a3c5bc03e0a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEyfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1626454504237-90af4469063d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1626806416274-d943ad8f7482?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1627895497892-025681b2dce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE1fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1627857496990-ab734bff4b8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1627857498841-7a62822a49e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE3fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1626106182308-f7ba2487d932?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1633163590674-1291c3a6467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1607158111377-26fb77692c59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIwfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1607442478647-30ffd646d824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIxfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1603531085227-eda98781a9bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1607498889669-c2fb1e299cb7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1602578383194-afc288bfb272?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-
-    //     {image :"https://images.unsplash.com/photo-1613033075264-1a7cd93d7f75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1648603200279-944a55251a5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"},
-    //     {image :"https://images.unsplash.com/photo-1634542881441-28bf0c4b818b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI4fHduenBMeHMwblFZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"}
-    // ]
-
-
-    // image mapping
-// document.querySelector("#img").value
-
-// arr.map(function(e){
-
-//     var box = document.createElement("div")
-//     box.setAttribute("id","box")
-
-
-//     var image = document.createElement("img");
-//     image.src  = e.image;
-//     image.setAttribute("id","smallimg")
-
-//     var btn = document.createElement("button");
-  
-//     box.append(image)
-//     document.querySelector("#img").append(box);
-// });
 
 </script>
