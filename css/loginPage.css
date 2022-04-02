@@ -5,13 +5,19 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Hubballi', cursive;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Helvetica";
+
+    
 }
+label{
+    font-family: "Helvetica";
+    font-weight: 400;
+}
+
 
 body{
     background: white;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 }
 
@@ -130,12 +136,16 @@ body{
     justify-content: space-between;
 }
 
-.form_wrap  input[type="text"]{
+.form_wrap  input{
     width: 100%;
     border-radius: 3px;
     border: 1px solid black;
     padding: 10px;
     outline: none;
+}
+
+a{
+    color: grey;
 }
 
 .form_wrap .submit_btn{

@@ -1,11 +1,11 @@
-document.querySelector("#form1").addEventListener("submit", signinFunction)
+
+document.querySelector("#form1").addEventListener("submit",signinFunction)
 
 var userData = JSON.parse(localStorage.getItem("signupData"))
-
-function signinFunction() {
+function signinFunction(){
 
     event.preventDefault()
-
+    
     var userEmail = document.querySelector("#email-input").value
     console.log(userEmail)
     var userPassword = document.querySelector("#Password-input").value
@@ -14,17 +14,21 @@ function signinFunction() {
     var flag = false
     userData.forEach(element => {
 
-        if (element.emailAddress == userEmail && element.password == userPassword) {
+        if(element.emailAddress==userEmail && element.password==userPassword)
+        {
             flag = true
         }
-
+        
     });
 
-    if (flag == true) {
-        alert(window.open = ("Home.html") console.log(alert)
-        }
-        else {
-            alert("login not sucessfull")
-        }
-
+    if(flag==true)
+    {
+        alert("login sucessfull")
+        window.location="../index.html"
     }
+    else
+    {
+        alert("login not sucessfull")
+    }
+
+}

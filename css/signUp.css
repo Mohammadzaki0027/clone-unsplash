@@ -5,9 +5,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Hubballi', cursive;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Helvetica";
 }
+
+label{
+    font-family: "Helvetica";
+    font-weight: 400;
+}
+
 
 body{
     background: white;
@@ -47,6 +52,10 @@ position: relative;
     width: 100%;
 }
 
+.image_content{
+    color: white;
+}
+
 .image .top-left-logo{
     position: absolute;
     top: 30px;
@@ -58,6 +67,35 @@ position: relative;
 
 }
 
+.image_content{
+    width: 400px;
+    height: 100%;
+    margin-top: 120px;
+    text-align: left;
+   
+}
+
+.image_content p{
+    margin-top: 30px;
+     font-size: 24px;
+      font-family: "Helvetica";
+    font-weight: 400;
+ 
+     
+    
+}
+.image_content h1{
+    margin-top: 30px;
+    font-size: 48px;
+    
+}
+
+#image_bottom_line{
+    color: white;
+    width: 400px;
+    text-align: center;
+    margin-top: 200px;
+ }
 
 
 .main .image img{
@@ -78,7 +116,7 @@ position: relative;
 
 .registration_form{
     height: 100%;
-    width: 810px;
+    width: 800px;
     /* background: rgb(233, 224, 224); */
     /* border: 1px solid red; */
     padding: 25px;
@@ -114,7 +152,7 @@ position: relative;
     /* width: 100%; */
     color: white;
     background-color:#1778f2;;
-    padding: 15px;
+    padding: 8px;
     border: 0px;
     border-radius: 5px;
     /* letter-spacing: 3px; */
@@ -131,6 +169,9 @@ position: relative;
     margin-top: 90px;
     margin-left: 80px;
     margin-right: 80px;
+    padding-top: 5px;
+    border-radius: 5px; 
+    padding-bottom: 5px;
     
 
 }
@@ -175,23 +216,31 @@ position: relative;
     width: 100%;
 }
 
-.input_wrap_last{
-width: 56%;
+.input_wrap_last1{
+width: auto;
 /* color: red; */
 margin-left: 80px;
-margin-right: 80px;
 }
 
-.form_wrap  input[type="text"]{
+.input_wrap_last2{
+    width: auto;
+    /* color: red; */
+    margin-left: 50px;
+    margin-right: 80px;
+    }
+
+.form_wrap  input{
     width: 100%;
     border-radius: 3px;
     border: 1px solid grey;
     /* border: 1px solid red; */
     /* background-color: green; */
     padding: 10px;
+    padding-top: 10px;
     outline: none;
     
 }
+
 
 .form_wrap .join_btn{
     width: 100%;
@@ -212,3 +261,6 @@ margin-right: 80px;
         margin-top: 20px;
 }
 
+a{
+    color: grey;
+}
