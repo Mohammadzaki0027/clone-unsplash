@@ -22,28 +22,27 @@ Demo video link:https://drive.google.com/file/d/15HzjgdrepKRzfkTD00kk5hAAVqEieHi
 Blog link: https://medium.com/@mohammadzaki7058/project-of-clone-the-high-quality-hd-photos-known-as-clone-unsplash-website-69bba0115404
 ## Contributing
 
-Mohammad Zaki 
+➡️ Mohammad Zaki 
 
 Homepage of website
 
-Vijay pandit
+➡️ Vijay Pandit
 
 Login/singup page
 
-Sandhya 
+➡️ Sandhya Kushwaha
 
 Act for Nature page
 
-Asheesh Gupta
+➡️ Asheesh Gupta
 
 Advertise page
 
-Sanjay Gupta
+➡️ Sanjay Gupta
 
 Blog page
 
-
-Dabloo kumar
+➡️ Dabloo kumar
 
 Explore page
 
@@ -97,32 +96,17 @@ I am learning in masai school as full stack developer. I joined masai scchool in
 
 ## 🔗 Links
 
-Mohammad Zaki username
+➡️ Mohammad Zaki username - Mohammadzaki0027
 
-Mohammadzaki0027
+➡️ Vijay Pandit username - vijay4211
 
-Vijay Pandit username
+➡️ Dabloo Kumar userrname - Dabloo9123
 
-vijay4211
+➡️ Sandhya username - sand000
 
-Dabloo Kumar userrname
+➡️ Asheesh Gupta username - asheesh2025
 
-Dabloo9123
-
-
-Sandhya username
-
-sand000
-
-Asheesh Gupta username
-
-
-asheesh2025
-
-Sanjay Gupta username
-
-
-sanjugu
+➡️ Sanjay Gupta username - sanjugu
 
 
 
