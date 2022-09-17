@@ -1,4 +1,4 @@
-# clone-unsplash
+# Clone of Unsplash website
 
 
 Clone of Unsplash website
